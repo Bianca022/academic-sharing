@@ -1,0 +1,19 @@
+footer {
+    text-align: center;
+    padding: 1rem 2rem;
+    width: 95%;
+    height: 10vh;
+    align-items: center;
+}
+
+footer a {
+    margin: 10px;
+    color: #774387;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.logo-footer {
+    font-size: 20px;
+    align-items: center;
+}

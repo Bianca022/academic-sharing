@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 95%;
+    background-color: #774387;
+    align-items: center;
+}
+
+nav a {
+    margin: 10px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
