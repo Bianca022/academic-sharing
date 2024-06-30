@@ -6,7 +6,7 @@ function NavBar() {
         <div>
           <a href="/home">Pagina principal</a>
           <a href="/registerPubli">Comentar algo</a>
-          <a href="">Bliblioteca</a>
+          <a href="/biblioteca">Bliblioteca</a>
         </div>
       </nav>
     </>

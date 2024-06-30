@@ -42,7 +42,16 @@ function Login() {
         <div className="container">
           <form>
             <h1 style={{ textAlign: "center" }}>Login</h1>
-
+            <div className="flex-colum">
+              <label htmlFor="email">Nome de usuário:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
+            </div>
             <div className="flex-colum">
               <label htmlFor="email">E-mail:</label>
               <input

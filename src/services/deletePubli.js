@@ -6,7 +6,7 @@ export const deletePubli = async (postId) => {
     const token = localStorage.getItem("accessToken");
 
     const response = await axios.delete(
-      `http://127.0.0.1:8000/posts/${postId}/`, // Use o postId fornecido como parte da URL
+      `http://127.0.0.1:8000/posts/${postId}/`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
