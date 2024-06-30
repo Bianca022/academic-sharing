@@ -44,7 +44,16 @@ function Login() {
         <div className="container">
           <form>
             <h1 style={{ textAlign: "center" }}>Cadastro de Usuário</h1>
-
+            <div className="flex-colum">
+              <label htmlFor="email">Nome de usuário:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
+            </div>
             <div className="flex-colum">
               <label htmlFor="email">E-mail:</label>
               <input
@@ -65,16 +74,7 @@ function Login() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="flex-colum">
-              <label htmlFor="password">Confirmar senha:</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
+
             {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
             {successMessage && (
               <p style={{ color: "green" }}>{successMessage}</p>
